@@ -18,8 +18,15 @@
 //   console.log("Vous êtes majeur.");
 // }
 //chaptre 10
-for (let i = 1; i <= 10; i++) {
-  if (i === 5) continue; // sauter le 5
-  console.log("Nombre : " + i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   if (i === 5) continue; // sauter le 5
+//   console.log("Nombre : " + i);
+// }
+//chaptre 7
+let nombre1 = 10;
+let nombre2 = 5;
+let somme = nombre1 + nombre2;
+console.log("La somme est : " + somme);
+
+
 
