@@ -28,16 +28,14 @@
 // let somme = nombre1 + nombre2;
 // console.log("La somme est : " + somme);
 //chaptre 12
-let competences = ["C1", "C3", "C2", "C1", "C8", "C2", "C1", "C5"];
-function compterOccurrences(tableau, code) {
-    let compteur = 0;
-    for (let i = 0; i < tableau.length; i++) {
-      if (tableau[i] === code) {
-        compteur++;
-      }
+  let competence = ["c1","c2","c3"];
+  let competeur ={};
+  for(let i=0; i<competences.length; i++){
+    let code=compteur[i];
+    if (competeur[code] ===undefined){
+    }else{
+      compteurs[code]++;
     }
-    return compteur;
   }
-  let codeChoisi = prompt("Quel code veux-tu compter ? (ex: C1, C2, C3...)");
-  let resultat = compterOccurrences(competences, codeChoisi);
-  console.log("Le code " + codeChoisi + " apparaît " + resultat + " fois dans le tableau.");
+  console.log(compteurs)
+
