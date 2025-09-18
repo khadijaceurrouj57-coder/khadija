@@ -23,10 +23,21 @@
 //   console.log("Nombre : " + i);
 // }
 //chaptre 7
-let nombre1 = 10;
-let nombre2 = 5;
-let somme = nombre1 + nombre2;
-console.log("La somme est : " + somme);
-
-
-
+// let nombre1 = 10;
+// let nombre2 = 5;
+// let somme = nombre1 + nombre2;
+// console.log("La somme est : " + somme);
+//chaptre 12
+let competences = ["C1", "C3", "C2", "C1", "C8", "C2", "C1", "C5"];
+function compterOccurrences(tableau, code) {
+    let compteur = 0;
+    for (let i = 0; i < tableau.length; i++) {
+      if (tableau[i] === code) {
+        compteur++;
+      }
+    }
+    return compteur;
+  }
+  let codeChoisi = prompt("Quel code veux-tu compter ? (ex: C1, C2, C3...)");
+  let resultat = compterOccurrences(competences, codeChoisi);
+  console.log("Le code " + codeChoisi + " apparaît " + resultat + " fois dans le tableau.");
